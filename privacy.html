@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>youtube-upload Privacy Policy</title>
+<meta name="description" content="Privacy policy for youtube-upload, a personal YouTube upload tool.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a></nav>
+<h1>Privacy Policy</h1>
+<p class="meta">Effective date: October 16, 2026</p>
+
+<p>This policy describes how youtube-upload (the "Tool") handles data. The Tool is a personal command-line program used only by its developer to upload the developer's own videos to the developer's own YouTube channels.</p>
+
+<h2>1. Who uses the Tool</h2>
+<p>The only user is the developer. The Tool is not distributed, sold or offered to anyone else, and it has no public sign-up.</p>
+
+<h2>2. Google user data the Tool accesses</h2>
+<p>When the developer signs in with Google OAuth, the Tool requests these scopes:</p>
+<ul>
+<li><code>https://www.googleapis.com/auth/youtube.upload</code> — to upload videos and set thumbnails on the developer's channel.</li>
+<li><code>https://www.googleapis.com/auth/youtube.readonly</code> — to read the signed-in channel's ID and title, so the Tool can confirm it is uploading to the intended channel.</li>
+</ul>
+<p>The Tool does not request access to viewer data, comments, analytics, email, contacts or any other Google service.</p>
+
+<h2>3. How the data is used</h2>
+<ul>
+<li>The channel ID and title are compared with the developer's own configuration and printed on the developer's screen. They are not used for anything else.</li>
+<li>Video files, titles, descriptions and thumbnails come from the developer's computer and are sent only to YouTube.</li>
+</ul>
+
+<h2>4. Storage and security</h2>
+<ul>
+<li>OAuth tokens are stored only on the developer's own computer, in a file readable only by the developer's user account (permission 600).</li>
+<li>The Tool keeps a small local record of each upload (video ID, URL, upload time, privacy setting) next to the source video file.</li>
+<li>No data is sent to any server other than Google's APIs. There is no database, analytics or tracking.</li>
+</ul>
+
+<h2>5. Sharing</h2>
+<p>The Tool does not sell, share or transfer Google user data to any third party. It does not use Google user data for advertising, and it does not use it to develop or train AI or machine-learning models.</p>
+
+<h2>6. Compliance</h2>
+<p>The Tool's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Use of YouTube is subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>7. Retention and deletion</h2>
+<p>The developer can delete the stored tokens at any time by removing the token file, and can revoke the Tool's access at <a href="https://myaccount.google.com/permissions">Google Account permissions</a>. Revoking access stops all further API use.</p>
+
+<h2>8. Changes</h2>
+<p>If this policy changes, the new version will be published on this page with a new effective date.</p>
+
+<h2>9. Contact</h2>
+<p>Questions can be filed as an issue on the <a href="https://github.com/dome-wiki/youtube-upload/issues">GitHub repository</a>.</p>
+
+<hr>
+<div lang="ja">
+<h2>プライバシーポリシー（日本語の要約）</h2>
+<ul>
+<li>本ツールは、開発者本人が自分のチャンネルに自分の動画を上げるためだけに使う個人用ツールです。利用者は開発者本人だけです。</li>
+<li>要求する権限は、動画のアップロード（<code>youtube.upload</code>）と、投稿先チャンネルを確かめるための読み取り（<code>youtube.readonly</code>）だけです。</li>
+<li>OAuth トークンは開発者の PC にだけ、本人しか読めない形で保存します。外部のサーバーには送りません。</li>
+<li>Google のユーザーデータを第三者に販売・共有せず、広告や AI の学習にも使いません。Google API Services User Data Policy（Limited Use を含む）に従います。</li>
+<li>アクセスは <a href="https://myaccount.google.com/permissions">Google アカウントの権限設定</a>からいつでも取り消せます。</li>
+</ul>
+</div>
+</main>
+</body>
+</html>
