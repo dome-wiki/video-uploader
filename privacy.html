@@ -21,15 +21,15 @@
 <h2>2. Google user data the Tool accesses</h2>
 <p>When the developer signs in with Google OAuth, the Tool requests these scopes:</p>
 <ul>
-<li><code>https://www.googleapis.com/auth/youtube.upload</code> — to upload videos and set thumbnails on the developer's channel.</li>
-<li><code>https://www.googleapis.com/auth/youtube.readonly</code> — to read the signed-in channel's ID and title, so the Tool can confirm it is uploading to the intended channel.</li>
+<li><code>https://www.googleapis.com/auth/youtube.force-ssl</code> — to manage the developer's own videos on the developer's own channel: upload videos, set thumbnails, edit titles, descriptions, tags and publishing settings, add videos to playlists, upload caption files, and read the signed-in channel's ID and title so the Tool can confirm it is working on the intended channel.</li>
 </ul>
+<p>The Tool only acts on videos that belong to the intended channel; it checks the channel of every video before changing it. It never deletes videos, rates videos or posts comments.</p>
 <p>The Tool does not request access to viewer data, comments, analytics, email, contacts or any other Google service.</p>
 
 <h2>3. How the data is used</h2>
 <ul>
-<li>The channel ID and title are compared with the developer's own configuration and printed on the developer's screen. They are not used for anything else.</li>
-<li>Video files, titles, descriptions and thumbnails come from the developer's computer and are sent only to YouTube.</li>
+<li>The channel ID and title, and the title, status and processing state of the developer's own videos, are compared with the developer's own configuration and printed on the developer's screen. They are not used for anything else.</li>
+<li>Video files, titles, descriptions, tags, thumbnails and caption files come from the developer's computer and are sent only to YouTube.</li>
 </ul>
 
 <h2>4. Storage and security</h2>
@@ -65,7 +65,7 @@
 <h2>プライバシーポリシー（日本語の要約）</h2>
 <ul>
 <li>本ツールは、開発者本人が自分のチャンネルに自分の動画を上げるためだけに使う個人用ツールです。利用者は開発者本人だけです。</li>
-<li>要求する権限は、動画のアップロード（<code>youtube.upload</code>）と、投稿先チャンネルを確かめるための読み取り（<code>youtube.readonly</code>）だけです。</li>
+<li>要求する権限は <code>youtube.force-ssl</code> の1つです。自分のチャンネルの動画のアップロード・サムネ設定・タイトルや公開設定の編集・再生リストへの追加・字幕のアップロードと、投稿先チャンネルの確認に使います。動画の削除・評価・コメントはしません。</li>
 <li>OAuth トークンは開発者の PC にだけ、本人しか読めない形で保存します。外部のサーバーには送りません。</li>
 <li>Google のユーザーデータを第三者に販売・共有せず、広告や AI の学習にも使いません。Google API Services User Data Policy（Limited Use を含む）に従います。</li>
 <li>本ツールの利用により、利用者は <a href="https://www.youtube.com/t/terms">YouTube 利用規約</a>に同意したものとみなされます。Google のデータの扱いは <a href="https://policies.google.com/privacy">Google プライバシーポリシー</a>をご覧ください。</li>

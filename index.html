@@ -19,6 +19,8 @@
 <ul>
 <li>Reads a finished video file, its title and description, and an optional thumbnail from the developer's local computer.</li>
 <li>Uploads them with the YouTube Data API v3 (<code>videos.insert</code>, <code>thumbnails.set</code>).</li>
+<li>Edits the developer's own videos afterwards: titles, descriptions, tags and publishing settings (<code>videos.update</code>), playlists (<code>playlists.insert</code>, <code>playlistItems.insert</code>) and caption files (<code>captions.insert</code>).</li>
+<li>Reads the status and processing state of the developer's own videos (<code>videos.list</code>).</li>
 <li>Checks the signed-in channel with <code>channels.list (mine=true)</code> and refuses to upload if it is not the intended channel.</li>
 <li>Declares altered or synthetic content (<code>containsSyntheticMedia</code>) when a video uses synthetic narration.</li>
 </ul>
@@ -27,6 +29,7 @@
 <ul>
 <li>It does not access any other user's account or channel.</li>
 <li>It does not read, collect, store or share viewer data, comments or analytics.</li>
+<li>It does not delete videos, rate videos or post comments.</li>
 <li>It has no web interface and no other users.</li>
 </ul>
 
