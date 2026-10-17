@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>youtube-upload Privacy Policy</title>
-<meta name="description" content="Privacy policy for youtube-upload, a personal YouTube upload tool.">
+<title>Dome Video Uploader Privacy Policy</title>
+<meta name="description" content="Privacy policy for Dome Video Uploader, a personal YouTube upload tool.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a></nav>
+<nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective date: October 16, 2026</p>
+<p class="meta">Effective date: October 18, 2026</p>
 
-<p>This policy describes how youtube-upload (the "Tool") handles data. The Tool is a personal command-line program used only by its developer to upload the developer's own videos to the developer's own YouTube channels.</p>
+<p>This policy describes how Dome Video Uploader (the "Tool") handles data. The Tool is a personal command-line program used only by its developer to upload the developer's own videos to the developer's own YouTube channels.</p>
 
 <h2>1. Who uses the Tool</h2>
 <p>The only user is the developer. The Tool is not distributed, sold or offered to anyone else, and it has no public sign-up.</p>
@@ -43,16 +43,22 @@
 <p>The Tool does not sell, share or transfer Google user data to any third party. It does not use Google user data for advertising, and it does not use it to develop or train AI or machine-learning models.</p>
 
 <h2>6. Compliance</h2>
-<p>The Tool's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Use of YouTube is subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>The Tool's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<p>The Tool uses the YouTube API Services. By using the Tool, users agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>The Tool does not use cookies and does not place, access or recognize any information on the user's device or browser, other than the local token file described in section 4.</p>
 
 <h2>7. Retention and deletion</h2>
-<p>The developer can delete the stored tokens at any time by removing the token file, and can revoke the Tool's access at <a href="https://myaccount.google.com/permissions">Google Account permissions</a>. Revoking access stops all further API use.</p>
+<ul>
+<li>The Tool does not keep any data received from the YouTube API Services other than the ID and URL of the developer's own uploaded videos, which are kept only in the local upload record.</li>
+<li>The developer can delete the stored tokens and upload records at any time by removing the files on their computer.</li>
+<li>Access can be revoked at any time at the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>. Revoking access stops all further API use. When access is revoked, the local token file is deleted within 7 days.</li>
+</ul>
 
 <h2>8. Changes</h2>
 <p>If this policy changes, the new version will be published on this page with a new effective date.</p>
 
 <h2>9. Contact</h2>
-<p>Questions can be filed as an issue on the <a href="https://github.com/dome-wiki/youtube-upload/issues">GitHub repository</a>.</p>
+<p>Questions can be filed as an issue on the <a href="https://github.com/dome-wiki/video-uploader/issues">GitHub repository</a>.</p>
 
 <hr>
 <div lang="ja">
@@ -62,7 +68,8 @@
 <li>要求する権限は、動画のアップロード（<code>youtube.upload</code>）と、投稿先チャンネルを確かめるための読み取り（<code>youtube.readonly</code>）だけです。</li>
 <li>OAuth トークンは開発者の PC にだけ、本人しか読めない形で保存します。外部のサーバーには送りません。</li>
 <li>Google のユーザーデータを第三者に販売・共有せず、広告や AI の学習にも使いません。Google API Services User Data Policy（Limited Use を含む）に従います。</li>
-<li>アクセスは <a href="https://myaccount.google.com/permissions">Google アカウントの権限設定</a>からいつでも取り消せます。</li>
+<li>本ツールの利用により、利用者は <a href="https://www.youtube.com/t/terms">YouTube 利用規約</a>に同意したものとみなされます。Google のデータの扱いは <a href="https://policies.google.com/privacy">Google プライバシーポリシー</a>をご覧ください。</li>
+<li>アクセスは <a href="https://security.google.com/settings/security/permissions">Google のセキュリティ設定</a>からいつでも取り消せます。取り消した場合、PC 上のトークンは7日以内に削除します。</li>
 </ul>
 </div>
 </main>
